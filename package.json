@@ -1,0 +1,59 @@
+{
+  "name": "opencode-vision-bridge",
+  "version": "0.1.0",
+  "description": "Give vision to non-vision models in OpenCode using Google's free Gemini API.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "examples",
+    "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "smoke": "node scripts/smoke.mjs",
+    "check": "node -c src/index.js && npm test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "vision",
+    "gemini",
+    "multimodal",
+    "image",
+    "deepseek"
+  ],
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungvip69/opencode-vision-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hungvip69/opencode-vision-bridge/issues"
+  },
+  "homepage": "https://github.com/hungvip69/opencode-vision-bridge#readme",
+  "author": {
+    "name": "hungvip69"
+  }
+}
