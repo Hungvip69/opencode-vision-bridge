@@ -1,5 +1,13 @@
 # opencode-vision-bridge
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)
+[![Dependencies](https://img.shields.io/badge/dependencies-0-success)](package.json)
+[![Tests](https://img.shields.io/badge/tests-node%3Apassing-orange)](https://github.com/Hungvip69/opencode-vision-bridge/actions)
+[![GitHub stars](https://img.shields.io/github/stars/Hungvip69/opencode-vision-bridge)](https://github.com/Hungvip69/opencode-vision-bridge/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Hungvip69/opencode-vision-bridge)](https://github.com/Hungvip69/opencode-vision-bridge/issues)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Hungvip69/opencode-vision-bridge)](https://github.com/Hungvip69/opencode-vision-bridge)
+
 Give **vision to non-vision models** in [OpenCode](https://opencode.ai) — for free, using Google's Gemini API.
 
 When you attach an image to a chat running on a text-only model (DeepSeek, Qwen, Llama, ...), the image is transparently sent to Gemini, described in exhaustive detail (including **verbatim transcription of every piece of text** in the image), and the description is delivered to your model instead. Vision-capable models are left completely untouched and keep seeing the raw image.

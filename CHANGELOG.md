@@ -16,8 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `includeModels` / `excludeModels` regex options against `provider/model`
 - Environment variable configuration: `GEMINI_API_KEY`, `GOOGLE_API_KEY`, `VISION_BRIDGE_API_KEY`, `VISION_BRIDGE_MODEL`, `VISION_BRIDGE_INCLUDE`, `VISION_BRIDGE_EXCLUDE`
 - Multi-image batching (all images in a message → one Gemini request)
-- In-memory description cache keyed by image content
+- In-memory description cache keyed by SHA-1 content hash
 - Retry with exponential backoff on HTTP 429 / 5xx
-- Zero dependencies: global `fetch` + `node:fs` only
+- Zero dependencies: global `fetch` + Node built-ins only
 - Unit tests (`node --test`) covering targeting, data-URI parsing, file loading, and cache keys
 - Smoke script verifying the plugin loads and registers its hooks
+- Repository tooling: issue templates, PR template, `CODE_OF_CONDUCT.md`, `AGENTS.md`
